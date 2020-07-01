@@ -47,20 +47,29 @@ function qt_jumpApp(appName)
             $(document).ready(function(){
                 switch (list[1]){
                     case "mate-calc":
-                        document.getElementById("list_h10").click()
-                        break;
-                    case "ukui-system-monitor":
-                        document.getElementById("list_h1").click()
-                        break;
-                    case "onboard":
-                        document.getElementById("list_h23").click()
-                        break;
-                    case "cheese":
                         document.getElementById("list_h6").click()
                         break;
-                    case "gnome-screenshot":
-                        document.getElementById("list_h16").click()
-                        break; 
+                    case "indicator-china-weather":
+                        document.getElementById("list_h31").click()
+                        break;
+                    case "onboard":
+                        document.getElementById("list_h17").click()
+                        break;
+                    case "cheese":
+                        document.getElementById("list_h1").click()
+                        break;
+                    case "goseditmainmenu-53":
+                        document.getElementById("list_h12").click()
+                        break;
+                    case "mate-search-tool":
+                        document.getElementById("list_h23").click()
+                        break;
+                    case "blueman-manager":
+                        document.getElementById("list_h34").click()
+                        break;
+                    case "sharing-desktop":
+                        document.getElementById("list_h26").click()
+                        break;
                     default:
                         break;
                 }
