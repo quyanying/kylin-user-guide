@@ -1,288 +1,210 @@
-# 小工具
-## 茄子摄像头概述
-茄子摄像头是一款用摄像头拍照片和录制视频的系统应用软件，可添加眩晕、弯曲之类的视觉效果。主界面如图 1所示。
+# Tools
+## Cheese
+Take photos and record videos. Users can add some visual effects. The main interface as shown in Fig 1.
 
-![图 1 茄子摄像头主界面](image/1.png)
+![Fig 1 Cheese](image/1.png)
 
-### 基本功能
-图标及其功能介绍:
+### Basic Function
+- ![](image/icon1.png): The settings of photos, videos and burst.
 
-|图标	|图标功能说明|	图标|	图标功能说明
-| :------------ | :------------ | :------------ | :------------ |
-|![](image/icon22.png)|	照片、视频、连拍模式设置|![](image/icon23.png)|		摄像头
+- "Cheese Menus" > "Preferences" : The detail settings of webcam, image and capture.
+
+![Fig 2 Preferences-big](image/2.png)
 
 <br>
 
-#### 茄子摄像头菜单
-用户可以通过点击“茄子摄像头菜单”进入到菜单选项，如图 2所示。
+### Shortcut Key
 
-![图 2 茄子摄像头菜单](image/2.png)
-
-- **首选项**
-
-用户可以通过点击：茄子摄像头菜单 > 首选项，根据需求对摄像头、图像及抓取等参数进行设置，如图 3所示。
-
-![图 3 首选项](image/3.png)
-
-### 附 录
-#### 快捷键
-
-|选项	|快捷键|	操作内容
-| :------------ | :------------ | :------------ |
-|全屏（F）|F11|	将茄子摄像头投放到全屏
-|退出（Q）|	Ctrl+Q|	退出茄子摄像头
+| Shortcut | Function |
+| :------------ | :------------ |
+| F11 |	Fullscreen |
+| Ctrl + Q | Quit |
 
 <br>
 <br>
 
-## MATE计算器概述
-MATE计算器是一款提供基本、高级、财务、编程四种模式的计算器工具软件。主界面由标题栏（最小化、关闭）、菜单、数据显示区及计算操作区构成，如图 4所示。
+## MATE Calculator
+Provide 4 modes of the calculate to meet the needs of conventional calculation. The main interface as shown in Fig 3.
 
-![图 4 MATE计算器主界面](image/4.png)
+![Fig 3 MATE Calculator](image/3.png)
 
-### 基本功能 
-#### 首选项
+### Basic Function
+Click "Mode" to change the mode of the calculator.
 
-用户可以通过点击：菜单 > 计算器 > 首选项，根据需求对数字格式（自动、定点数、科学、工程）、角度单位（角度、弧度、百分度）、字长（8位、16位、32位、64位）等进行设置，如图 5所示。
+- **Advanced**
 
-![图 5 首选项](image/5.png)
+![Fig 4 Advanced](image/4.png)
 
-#### 模 式
-- **高级模式**
+- **Financial**
 
-高级模式可以进行更加丰富方式进行快捷计算，如图 6所示。
+![Fig 5 Financial](image/5.png)
 
-![图 6 高级模式](image/6.png)
+- **Programming**
 
-- **财务模式**
+![Fig 6 Programming](image/6.png)
 
-财务模式是针对财务相关的快捷计算，如图 7所示。
+### Shortcut Key
 
-![图 7 财务模式](image/7.png)
-
-- **编程模式**
-
-编程模式是针对编程相关的快捷计算，如图 8所示。
-
-![图 8 编程模式](image/8.png)
-
-### 附 录
-#### 快捷键
-
-|选项	|快捷键	|操作内容
-| :------------ | :------------ | :------------ |
-|复制（C）|	Ctrl+C|	复制计算内容
-|粘贴（P）|	Ctrl+V|	粘贴当前复制内容
-|撤销（U）|	Ctrl+Z|	撤销当前计算
-|重做（R）|	Shift+Ctrl+Z|	重新计算
-|退出（Q）|	Ctrl+Q	|退出MATE计算器
+| Shortcut | Function |
+| :------------ | :------------ |
+| Ctrl + C | Copy |
+| Ctrl + V | Paste |
+| Ctrl + Z | Undo |
+| Shift + Ctrl + Z | Redo |
+| Ctrl + Q | Quit |
 
 <br>
 <br>
 
-## 抓图概述
-抓图是一款用于截图的工具软件，可以抓取整个桌面、当前窗口或截取区域，可设置延时抓图，并且可以设定相关特效，如：是否包含鼠标指针、是否包含窗口边框。主界面包括图片抓取方式设置、特效设置及功能按钮三个部分，如图 9所示。
+## Screenshot
+It can grab the whole desktop, the current window, and a selected area. The main interface as shown in Fig 7.
 
-![图 9 抓图主界面](image/9.png)
+![Fig 7 Screenshot](image/7.png)
 
-### 基本功能
-#### 抓 图
-- **抓取整个桌面**
+### Shortcut Key
 
-抓取整个桌面是对整个桌面的抓取，可设置抓取前的延时（秒），特效：包含鼠标指针。
-
-- **抓取当前窗口**
-
-抓取当窗口是对当前打开窗口进行窗口截图，可设置抓取前的延时（秒），特效：包含鼠标指针、包含窗口边框，如图 10所示。
-
-![图 10 抓取当前窗口](image/10.png)
-
-- **选择一个截取区域**
-
-选择一个截取区域是对当前页面选取部分区域进行截图，操作即刻生效，如图 11所示。
-
-![图 11 选择一个截取区域](image/76.png)
-
-### 附 录
-#### 快捷键
-
-|选项	|快捷键|	操作内容
-| :------------ | :------------ | :------------ |
-|抓取整个桌面	|打印	|对整个桌面的抓取
-|抓取当前窗口	|Ctrl+打印|	对当前打开窗口进行窗口截图
-|选择一个截取区域	|Shift+打印	|对当前页面选取部分区域进行截图
+| Shortcut | Function |
+| :------------ | :------------ |
+| PrtSc | Grab the whole desktop |
+| Ctrl + PrtSc | Grab the current window |
+| Shift + PrtSc	| Select area to grab |
 
 <br>
 <br>
 
-## 屏幕键盘概述
-屏幕键盘是一款系统应用软件，用户可以通过屏幕上显示的软键盘，实现键盘输入功能。屏幕键盘主界面如图 12所示。
+## Onboard
+Show a soft keyboard on the screen, and users can input by it. The main interface as shown in Fig 8.
 
-![图 12 屏幕键盘主界面-big](image/12.png)
+![Fig 8 Onboard-big](image/8.png)
 
-### 基本功能
-图标及其功能介绍：
+### Basic Function
+Icon and Function:
 
-|图标	|图标功能说明	|图标	|图标功能说明
+| Icon | Function | Icon | Function |
 | :------------ | :------------ | :------------ |:------------ |
-|![](image/icon43.png)|	大写开启与关闭|![](image/icon50.png)|键盘大写及常用符号开启（单击）与固定（双击）
-|![](image/icon44.png)|	显示连接到此计算机的驱动器和硬件（单击选择主菜单开启、双击固定主菜单）	|![](image/icon51.png)|	固定Alt键
-|![](image/icon45.png)|	删除操作	|![](image/icon52.png)|	关闭操作
-|![](image/icon46.png)|	回车	|![](image/icon53.png)|	隐藏屏幕键盘
-|![](image/icon47.png)|	切换单击帮助程序	|![](image/icon54.png)|	移动屏幕键盘
-|![](image/icon48.png)|	主键盘	|![](image/icon55.png)|	数字键盘和片段
-|![](image/icon49.png)|	设置片段以便快捷输入（类搜狗输入法快捷用语）||||
+|![](image/icon2.png)| Open/Close caps|![](image/icon3.png)|Open caps once
+|![](image/icon4.png)| Open Alt|![](image/icon5.png)| Backspace
+|![](image/icon6.png)| Hide onboard|![](image/icon7.png)| Toggle click helpers
+|![](image/icon8.png)| Move onboard|![](image/icon9.png)| Main keyboard
+|![](image/icon10.png)|	Number block and snippets|![](image/icon11.png)| Sinppets
 
 <br>
 
-#### 大写开启与关闭
-用户通过点击“![](image/icon43.png)”图标，可以对键盘的大小写进行设定，如图 13所示。
+#### Click Helpers
+Click "![](image/icon7.png)" to toggle click helpers, as shown in Fig 9.
 
-![图 13 大写开启-big](image/13.png)
+![Fig 9 Toggle click helpers](image/9.png)
 
-#### 切换单击帮助程序
-用户通过点击“![](image/icon47.png)”图标，切换单击帮助程序，如图 14所示。
-
-![图 14 切换单击帮助程序](image/14.png)
-
-图标及其功能介绍：
-
-|图标|	图标功能说明| 	图标|	图标功能说明
+|Icon| Function | Icon | Function |
 | :------------ | :------------ | :------------ |:------------ |
-|![](image/icon57.png)|	中键单击	|![](image/icon60.png)|	右击
-|![](image/icon58.png)|双击	|![](image/icon61.png)|	拖拽点击
-|![](image/icon59.png)|激活悬停单击||||
+|![](image/icon12.png)|	Middle click |![](image/icon13.png)| Right click
+|![](image/icon14.png)| Double click |![](image/icon15.png)| Drag click
+|![](image/icon16.png)| Activate hover click||||
 
-#### 片 段
-用户通过点击“![](image/icon62-o.png)”图标，添加常用语，如图 15所示。
-
-![图 15 片 段](image/85.png)
-
-#### 首选项
-用户通过点击“![](image/icon63-o.png)”图标，可对屏幕键盘的常规、窗口、布局、主题等进行设置，如图 16所示。
-
-![图 16 首选项](image/16.png)
-<br>
 <br>
 
-## 搜索文件概述
-搜索文件提供了以多种规则在对应目录中查找相关文件的功能，主界面如下图所示：
+#### Preferences
+Click ![](image/icon17.png) to set the layout, window, theme, etc. of Onboard.
 
-![图 17 搜索文件](image/17.png)
-
-### 基本功能
-在“名称包含”框中输入内容，并指定要搜索的文件夹，点击“查找”，即会出现内容。如下图所示：
-
-![图 18 查找结果](image/18.png)
-
-### 高级功能
-点击“选择更多选项”，打开折叠菜单，可根据用户需要，添加多个限制条件。选择选项后，点击右侧的“添加”/“删除”按钮，即可添加或删除该选项，如下图所示：
-
-![图 19 多个选项](image/19.png)
-
-搜索文件提供的高级选项如下所示：
-
-![图 20 提供的选项](image/20.png)
-<br>
-<br>
-
-## 桌面共享概述
-桌面共享是一款网络应用软件，可以对桌面共享进行相关设置。主界面如图 21所示。
-
-![图 21 桌面共享主界面](image/21.png)
-
-### 基本功能
-桌面共享可对共享、安全及显示通知区域图标三部分进行设置。
-
-#### 共 享
-用户在共享桌面时，勾选“允许其他人查看您的桌面”即可，如图22所示。
-
-![图 22 允许桌面共享](image/22.png)
-
-#### 安 全
-在安全设置区域，默认勾选“您必须为本机器确认每次访问”，同时可以根据用户需求，设置密码、自动配置UPnP路由器开放和转发端口。
-
-#### 显示通知区域图标
-用户在桌面共享时，可以设定显示通知区域图标的显示状态：总是、只在有用户连接时（默认）、永不。
+![Fig 10 Preferences-big](image/10.png)
 
 <br>
 <br>
 
-## 麒麟天气概述
-麒麟天气是一款帮助用户获取天气预报的软件，通过图形界面的城市管理和搜索，方便用户快速获取城市天气信息及生活指数信息，如：每周气候、穿衣指数、感冒指数、紫外线指数、洗车指数、空气指数、运动指数等。
+## Mate Search Tool
+It provides various rules to search files in the corresponding directories.
 
-麒麟天气的主界面如图 23所示。
+![Fig 11 Mate Search Tool](image/11.png)
 
-![图 23 麒麟天气主界面-big](image/23.png)
+### Basic Function
+Inputting the keywords in "Name contains" and select the folder, click "Find" to get the result.
+
+![Fig 12 Search result](image/12.png)
+
+### Advanced Function
+Click "Select more options" to open the menu. Users can "Remove"/"Add" various options.
+
+![Fig 13 Various options](image/13.png)
+
+The available options as shown in Fig 14.
+
+![Fig 14 Available options](image/14.png)
+<br>
 <br>
 
-### 基本功能
-#### 搜索城市或地区
-点击右上角搜索框，键入用户需要搜索的城市或地区，在用户键入的同时列出相关城市的筛选列表，如图 24所示。
+## Desktop Sharing
+Users can make settings related to desktop sharing through this app.
 
-![图 24 搜索城市或地区-big](image/24.png)
+![Fig 15 Desktop Sharing](image/15.png)
 
-点击麒麟天气城市管理，将为用户提供图形化管理界面如图 25所示，用户可以更具需要收藏需要关注的城市天气。
+### Basic Function
+#### Sharing
+Check "Allow other users to view your desktop" to open desktop sharing; Users can also choose whether to allow others to control their desktop.
 
-![图 25 城市管理-big](image/25.png)
+![Fig 16 Allow to view/control](image/16.png)
+
+#### Security
+Users can customize if it's necessary to confirm each access, set access password, and automatially configure UPnP router to open and forward ports.
+
+
+#### Show Notification Area Icon
+Users can set the status of the icon displayed in the notification area: Always, Only when someone is connected, and Never.
 
 <br>
 <br>
 
-## 蓝牙管理器概述
-蓝牙管理器是一款系统应用软件，可以连接/创建蓝牙网络，连接输入设备、音频设备，发送/接收/浏览文件等。主界面如图 26所示。
+## Blueman Manager
+Connect to bluetooth devices, and transfer/receive files.
 
-![图 26 蓝牙管理器主界面](image/26.png)
+![Fig 17 Blueman Manager](image/17.png)
 
-### 基本功能
-图标及其功能介绍：
+### Basic Function
+Icon and Function:
 
-|图标	|图标功能说明|	图标|	图标功能说明
+| Icon | Function | Icon | Function |
 | :------------ | :------------ | :------------ | :------------ |
-|![](image/icon1.png)|	搜索附近的设备|![](image/icon5.png)|将这个设备添加至已知设备列表
-|![](image/icon2.png)|	与设备进行配对|![](image/icon6.png)|将这个设备标记/取消标记为信任
-|![](image/icon3.png)|	为此设备运行设置助理|![](image/icon7.png)|将这个设备从已知设备列表中删去
-|![](image/icon4.png)|	向此设备发送文件|![](image/icon8.png)|使用obrx ftp浏览这个设备
+|![](image/icon19.png)| Search for nearby devices |![](image/icon23.png)| Add this device to list
+|![](image/icon20.png)| Pair with device |![](image/icon24.png)| Mark/Unmark as trusted |
+|![](image/icon21.png)| Run the assistant |![](image/icon25.png)|Remove this device from list 
+|![](image/icon22.png)| Send a file |||
 
 <br>
 
-#### 查找设备
-用户通过点击“![](image/icon1.png)”图标，可对附近蓝牙设备进行搜索，如图 27所示。
+#### Pair  
+1) Click "![](image/icon19.png)" to search device.
 
-![图 27 查找蓝牙设备](image/27.png)
+2) Click "![](image/icon20.png)" or right click a device, select "Pair".
 
-#### 配 对  
-用户通过点击“![](image/icon2.png)”图标或单击鼠标右键选中的设备，可对选中的设备进行配对，如图 28所示。
+![Fig 18 Pair confirm](image/18.png)
 
-![图 28 配对设备](image/28.png)
+3) As shown in Fig 18, means pair successfully.
 
-当出现配对图标“![](image/icon2.png)”时，表明配对成功。
+![Fig 19 Pair successfully](image/19.png)
 
-#### 标记或取消信任
-用户通过点击“![](image/icon6.png)”图标或单击右键选中的设备，可将当前设备标记为信任。
+### Advanced Function
+- Preferences
 
-#### 移除设备
-用户通过点击“![](image/icon7.png)”图标或单击右键选中设备，可移除当前已配对设备。
+Click "Adapter" > "Preferences" to set the name and the visibility.
 
-#### 发送文件
-用户通过点击“![](image/icon4.png)”图标或单击右键选中设备，可向当前设备发送文件。
+![Fig 20 Preferences](image/20.png)
 
-### 高级功能
-用户可以通过菜单的适配器、设备、视图、帮助选项，对蓝牙管理器进行相关操作。
+- View
+Click "View" to choose the parts shown on the interface, and the settings of plugins and local services.
 
-图标及其功能介绍：
-
-|图标	|图标功能说明|	图标|	图标功能说明
-| :------------ | :------------ | :------------ | :------------ |
-|![](image/icon9.png)|	设置		|![](image/icon14.png)|退出蓝牙管理器
-|![](image/icon10.png)|	给选中设备发送文件	|![](image/icon15.png)|	移除选中设备
-|![](image/icon11.png)|	与选中设备断开连接	|![](image/icon16.png)|	插件
-|![](image/icon12.png)|	本地服务（对网络和传输进行设置）	|![](image/icon17.png)|	进入问题反馈网址
-|![](image/icon13.png)|	查看关于蓝牙管理器信息		||||
-
+![Fig 21 View options](image/21.png)
+<br>
 <br>
 
-#### 适配器选项
-用户可以通过点击：菜单 > 适配器 > 设置，对蓝牙管理器进行可见设置和名称设置，如图 29所示。
+## Atril Document Viewer
+To view and read pdf files. As shown in Fig 22.
 
-![图 29 蓝牙适配器设置](image/29.png)
+![Fig 22 Atril-big](image/22.png)
+
+### Basic Function
+- Click "![](image/icon26.png)" and "![](image/icon27.png)" to page-up and page-down.
+
+- It provides page layout size options, as shown in Fig 23.
+
+![Fig 23 Layout size](image/23.png)
+
+- The "View" on the menu bar can set the layout of the whole interface, and through the "File" can see the pdf's property.

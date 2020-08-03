@@ -1,181 +1,168 @@
-# 音乐播放器
-## 概 述
-音乐播放器支持多种音乐格式，提供便捷的音频体验。主界面简洁、直观，如图 1所示。
+# Audacious
+## Overview
+Audacious supports various music formats，and provides convenient audio experiences. The interface as shown in Fig 1.
 
-![图 1 音乐播放器主界面-big](image/1.png)
+![Fig 1 Audacious-big](image/1.png)
 
-播放音乐时，界面如图 2所示。
+When playing music, the interface as shown in Fig 2.
 
-![图 2 正在播放-big](image/2.png)
+![Fig 2 Playing music-big](image/2.png)
 <br>
 
-## 基本功能
-图标功能介绍：
+## Basic Function
+Icon and function:
 
-| 图标 | 功能说明 | 图标 | 功能说明 |
-|:------------|:------------|:------------|:------------|
-|![](image/icon1.png)| 搜索 |![](image/icon8.png)| 打开文件 |
-|![](image/icon2.png)| 添加文件 |![](image/icon9.png)| 播放/暂停 |
-|![](image/icon3.png)| 停止 |![](image/icon10.png)| 上一首 |
-|![](image/icon4.png)| 下一首 |![](image/icon11.png)| 循环播放 |
-|![](image/icon5.png)| 随机播放 |![](image/icon12.png)| 单曲循环 |
-|![](image/icon6.png)| 音量调节 |![](image/icon13.png)| 新建列表 |
-|![](image/icon7.png)| 播放进度条 ||||
+| Icon | Function | Icon | Function |
+| :------------ | :------------ | :------------ | :------------ |
+|![](image/icon1.png)| Search |![](image/icon7.png)| Document Open |
+|![](image/icon2.png)| Add list |![](image/icon8-2.png) ![](image/icon8.png)| Start/Pause |
+|![](image/icon3.png)| Stop |![](image/icon9.png)| Go backward |
+|![](image/icon4.png)| Go forward |![](image/icon10.png)| Repeat |
+|![](image/icon5.png)| Shuffle |![](image/icon11.png)| Single repeat |
+|![](image/icon6.png)| Volume |||
 
 <br>
 
-### 搜索工具
-点击“![](image/icon1.png)”进入搜索界面，如图 3所示。
+### Search
+Click "![](image/icon1.png)" to open the search interface, as shown in Fig 3.
 
-![图 3 搜索工具-big](image/3.png)
+![Fig 3 Search-big](image/3.png)
 
-操作步骤：
+Input the name of the music at the search box, and select a folder at the bottom left corner, and then click the button “![](image/icon12.png)” to show the result.
 
-1) 在左下角选择文件夹，如：桌面，如图 4所示。
+Double click will add the selected music file to the playlist.
 
-![图 4 选择文件夹-big](image/4.png)
+### Add/Open File
+Click "![](image/icon2.png)" to add a file, and the file will add to the current list, waiting to be played.
 
-2) 在搜索框中输入音乐的文件名，再点击“刷新”按钮![](image/icon14-o.png)，即可找到对应的音频文件，如图 5所示。
+Click "![](image/icon7.png)" to open a file, which will cover all the contents of the "Now Playing" list, playing immediately. And if there didn't exist "Now Playing" list, it would be created.
 
-![图 5 搜索结果-big](image/5.png)
+### New Playlist
+Click "![](image/icon2.png)" under the volume button to create a New Playlist.
 
-3）双击该文件，则添加至正在播放列表。
-
-### 添加/打开文件
-点击“![](image/icon2.png)”添加音乐文件，该音乐会添加到当前播放列表，等待播放。
-
-点击“![](image/icon8.png)”打开音乐文件，该音乐将会覆盖“正在播放”列表中的所有内容，并立即播放。若当前不存在“正在播放”列表，则会新建一个。
-
-### 新建列表
-点击声音按钮下方的“![](image/icon2.png)”按钮，可创建新播放列表，如图 6所示。
-
-![图 6 创建新播放列表](image/6.png)
 <br>
 
-## 高级功能
-用户可通过菜单栏上的选项，对音乐播放器进行更详细的设置。此处对部分设置进行简要介绍。
+## Advanced Function
+Users can make more detailed settings for audacious through the options on the menu bar. Here are brief descriptions for some settings.
 
-### 文 件
-#### 设 置
-点击“文件” > “设置”，打开设置页面，如图 7所示。
+### Settings
+Click "File" > "Settings" to open the setting window, as shown in Fig 4.
 
-![图 7 音乐播放器设置](image/7.png)
+![Fig 4 File - Settings](image/4.png)
 
-- **外 观**
+- **Appearance**
 
-1）播放列表标签页
+1) Playlist Tabs
 
-总是显示标签页：即使当前没有播放列表，也会显示一个空列表。
+Always show tabs: Even if there is no playlist now, an empty list will be displayed.
 
-显示条目数量：显示当前列表中的文件数量。
+Show entry counts: Show the number of files in current playlist.
 
-显示关闭按钮：在列表名称旁边显示关闭按钮。
+Show close buttons: Show the close button near the name of playlist.
 
-![图 8 播放列表标签页设置效果](image/8.png)
+2) Playlist Columns: Customize the audio file's informations which will be displayed on the main interface, through left/right arrow between "Available columns" and "Displayed columns".
 
-2）播放列表列：通过“可用列”和“显示列”间的左/右箭头，自定义播放器窗口中要显示的音频文件的信息。
+3) Miscellaneous: Set the amount of rewind/fast forward time when pressing left/right arrow key on the keyboard.
 
-3）杂项：设置按键盘的左/右方向键时，快退/快进的时长。
+- **Audio**
 
-- **音 频**
+It's some professional settings, including Output plugin, Bit depth, Replay Gain, Adjust Levels, etc., as shown in Fig 5.
 
-音频设置是一些专业的设置，包括输出插件、位深、播放增益、调整幅度等，如图 9所示。
+![Fig 5 Audio-big](image/5.png)
 
-![图 9 音频设置](image/9.png)
+- **Playlist**
 
-- **播放列表**
+It includes Behavior, Compatibility, Song Display, Advanced four parts, as shown in Fig 6.
 
-播放列表设置包括行为、歌曲显示等，如图 10所示。
+![Fig 6 Playlist-big](image/6.png)
 
-![图 10 播放列表设置](image/10.png)
+- **Song Info**
 
-- **歌曲信息**
+It can set the Album Art and Popup Information, as shown in Fig 7.
 
-歌曲信息设置包括专辑封面个弹出信息两个部分，如图 11所示。
+![Fig 7 Song info-big](image/7.png)
 
-![图 11 歌曲信息设置](image/11.png)
+- **Plugins**
 
-- **插件设置**
+It provides some detailed settings, as shown in Fig 8.
 
-插件设置提供了一些详细设置项，如图 12所示。
+![Fig 8 Plugins-big](image/8.png)
 
-![图 12 插件设置](image/12.png)
+### Playback
+#### Jump to Time
+Click "Playback" > "Jump to Time" to go to the specified location, as shown in Fig 9.
 
-### 回 放
-#### 跳到时间
-点击“回放” > “跳到时间”，可跳到指定的位置，如图 13所示。
+![Fig 9 Jump to time](image/9.png)
 
-![图 13 跳到时间](image/13.png)
+#### Jump to Song
+Click "Playback" > "Jump to Song" and select a target song in the pop-up window, as shown in Fig 10.
 
-#### 跳到歌曲
-点击“回放” > “跳到歌曲”，可在弹窗中选择目标歌曲，如图 14所示。
+![Fig 10 Jump to song](image/10.png)
 
-![图 14 跳到歌曲](image/14.png)
+#### Repeat Clip
+1) Click "Playback" > "Set Repeat Point A" at the beginning of the clip to be played on repeat.
 
-#### 片段循环
-1）在要重复播放的片段开始处，点击“回放” > "设置重复点A"。
+2) Click "Playback" > "Set Repeat Point B" at the end of the clip to be played on repeat.
 
-2）在要重复播放的片段结束处，点击“回放” > "设置重复点B"。
+3) Audacious will play this clip on a loop. Click "Playback" > "Clear Repeat Points" to cancle it.
 
-3）音乐播放器会循环播放这一段内容。点击“回放” > “清除重复点”，取消片段循环。
+### Playlist
+#### Sort/Sort Selected
+Click "Playlist" > "Sort"/"Sort Selected" to sort by certain rules. The rules provided as shown in Fig 11.
 
-### 播放列表
-#### 排序/排序选中项
-点击“播放列表” > “排序”/“排序选中项”，可按照一定规则进行排序。提供的可选规则如图 15所示。
+![Fig 11 Sort rules](image/11.png)
 
-![图 15 排序规则](image/15.png)
+#### Remove
+Click "Playlist" > "Remove Duplicates" to remove the duplicates by title, file name or file path.
 
-#### 删 除
-点击“播放列表” > “删除重复”，可按标题、文件名或文件路径删除重复项。
+Click "Playlist" > "Remove Unavailable Files" to remove the terms without available file in this playlist.
 
-点击“播放列表” > “移除无效文件”，可把列表中文件不存在的条目删除。
+### Output
+#### Equalizer
+Click "Output" > "Equalizer" to customize the values of equalizer, as shown in Fig 12.
 
-#### 播放列表管理器
-点击“播放列表” > “播放列表管理器”，可以新建、移除和重命名播放列表，如图 16所示。
+![Fig 12 Equalizer-big](image/12.png)
 
-![图 16 播放列表管理器](image/16.png)
+### View
+Click "View" to select which parts need to show in the main interface, as shown in Fig 13.
 
-### 外 观
-点击“外观”，可设置哪些部分需要在主界面中显示，如图 17所示。
-
-![图 17 外观](image/17.png)
+![Fig 13 View-big](image/13.png)
 <br>
 
-## 附 录
-### 快捷键
+## Appendix
+### Shortcut Key
 
-| 快捷键 | 功能 |
+| Shortcut | Function |
 | :------------ | :------------ |
-| Ctrl+O | 打开文件 |
-| Shift+Ctrl+O | 添加文件 |
-| Ctrl+Y | 搜索本地音乐库 |
-| Ctrl+Q | 退出音乐播放器 |
-| Ctrl+Enter | 从头播放 |
-| Ctrl+， | 暂停 |
-| Ctrl+. | 停止 |
-| Alt+↑ | 播放上一首音乐 |
-| Alt+↓ | 播放下一首音乐 |
-| Ctrl+R | 列表循环 |
-| Ctrl+G | 单曲循环 |
-| Ctrl+S | 随机播放 |
-| Ctrl+N | 禁止自动播放下一首 |
-| Ctrl+M | 在这首后停止 |
-| Ctrl+I | 查看歌曲信息 |
-| Ctrl+K | 跳到指定时间 |
-| Ctrl+J | 跳到指定歌曲 |
-| Ctrl+1 | 设置循环点A |
-| Ctrl+2 | 设置循环点B |
-| Ctrl+3 | 清除循环点 |
-| Shift+Enter | 恢复播放 |
-| Ctrl+T | 新建一个播放列表 |
-| F2 | 重命名当前播放列表 |
-| Ctrl+W | 移除当前播放列表 |
-| Ctrl+P | 管理播放列表 |
-| Shift+Ctrl++	| 调高音量 |
-| Ctrl+- | 调低音量 |
-| Ctrl+E | 设置均衡器参数 |
-| Shift+Ctrl+M | 选择是否显示菜单 |
-| Shift+Ctrl+I | 选择是否显示信息区域 |
-| Shift+Ctrl+S | 选择是否显示状态栏 |
-| Shift+Ctrl+R | 选择是否显示剩余时间 |
-
+| Ctrl + O | Open files |
+| Shift + Ctrl + O | Add files |
+| Ctrl + Y | Search library |
+| Ctrl + Q | Quit |
+| Ctrl + Enter | Play from the start|
+| Ctrl + , | Pause |
+| Ctrl + . | Stop |
+| Alt + ↑ | Previous |
+| Alt + ↓ | Next |
+| Ctrl + R | Repeat the list |
+| Ctrl + G | Repeat the single song |
+| Ctrl + S | Random play |
+| Ctrl + N | Don't play next one automatically |
+| Ctrl + M | Stop after this song |
+| Ctrl + I | Song info |
+| Ctrl + K | Jump to time	|
+| Ctrl + J | Jump to song |
+| Ctrl + 1 | Set repeat point A |
+| Ctrl + 2 | Set repeat point B |
+| Ctrl + 3 | Clear repeat points |
+| Shift + Enter | Resume play |
+| Ctrl + T | Create a new playlist |
+| F2 | Rename the current playlist |
+| Ctrl + W | Remove the current playlist |
+| Ctrl + P | Playlist Manager |
+| Shift + Ctrl + + | Volume up |
+| Ctrl + - | Volume down |
+| Ctrl + E | Open equalizer setting |
+| Shift + Ctrl + M | Show menu bar or not |
+| Shift + Ctrl + I | Show info bar or not |
+| Shift + Ctrl + S | Show status bar or not |
+| Shift + Ctrl + R | Show remaining time or not |

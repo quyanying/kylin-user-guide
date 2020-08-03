@@ -4,7 +4,7 @@
 
 可在终端执行以下命令，把三个服务设为开机不启动，FORWARD即为ACCEPT。
 
-- systemctl disable kydroid2-daemon.service
+- systemctl disable kydroid-daemon.service（或是 systemctl disable kydroid2-daemon.service）
 
 - systemctl disable docker.socket
 

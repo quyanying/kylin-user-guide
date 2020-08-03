@@ -33,46 +33,49 @@ require(['marked'], function (markedSetCustom){
 //  xhr.send();
 //};
 
+var html_list={
+    cheese:"list_h1",
+    mate_calc:"list_h4",
+    goseditmainmenu_53:"list_h7",
+    onboard:"list_h9",
+    mate_search_tool:"list_h13",
+    sharing_desktop:"list_h16",
+    blueman_manager:"list_h21",
+    atril:"list_h25",
+    indicator_china_weather:"list_h27",
+    gnome_tetravex:"list_h1",
+    gnome_mines:"list_h2",
+    iagno:"list_h3",
+};
+
+//手册dbus跳转页面js接口函数
 function qt_jumpApp(appName)
 {
+    //去掉传过来字段两端的空格
     appName = appName.trim()
+    //判断是否是需要跳转标题的字段
     if(appName.search("/") > 0)
     {
+        //处理字段可能开头就是"/"的情况
         if(appName.indexOf("/") == 0){
             appName = appName.slice(1,appName.length)
         }
+        //截取跳转的app手册内容和显示app内容后的标题
         var list = appName.split("/")
         if(list.length == 2){
+             
+            //跳转app手册内容页面
             onclickButton(list[0])
+            
+            //将“-”转换成“_”
+            if(list[1].search("-")>0){
+                list[1] = list[1].replace(/-/g,"_");
+            }
+            
+            //页面的资源都加载完成后跳转需要的标题
             $(document).ready(function(){
-                switch (list[1]){
-                    case "mate-calc":
-                        document.getElementById("list_h6").click()
-                        break;
-                    case "indicator-china-weather":
-                        document.getElementById("list_h31").click()
-                        break;
-                    case "onboard":
-                        document.getElementById("list_h17").click()
-                        break;
-                    case "cheese":
-                        document.getElementById("list_h1").click()
-                        break;
-                    case "goseditmainmenu-53":
-                        document.getElementById("list_h12").click()
-                        break;
-                    case "mate-search-tool":
-                        document.getElementById("list_h23").click()
-                        break;
-                    case "blueman-manager":
-                        document.getElementById("list_h34").click()
-                        break;
-                    case "sharing-desktop":
-                        document.getElementById("list_h26").click()
-                        break;
-                    default:
-                        break;
-                }
+                    var target = html_list[list[1]]
+                    document.getElementById(target).click()
             });
         }    
     }
@@ -81,36 +84,38 @@ function qt_jumpApp(appName)
 }
 
 var date ={
-    kylinOS:"2020年3月24日",
-    ukui:"2020年3月23日",
-    // kydroid2:"2019年11月13日",
-    ukui_control_center : "2020年3月21日",
-    biometric_manager : "2020年3月18日",
-    hot_key:"2020年3月20日",
-    peony:"2020年3月14日",
-    ubuntu_kylin_software_center:"2020年3月20日", 
-    kylin_video:"2020年3月20日",
-    burner:"2020年3月20日",
-    kylin_assistant:"2020年3月20日",
-    indicator_china_weather:"2020年3月20日",
-    // kylin_ipmsg:"2019年11月13日",
-    // kysec_ui_pkexec:"2019年11月13日",
-    // kybackup:"2019年11月13日",
-    // audacious:"2019年11月13日",
-    // eom :"2019年11月13日",
-    // kylin_update_manager:"2019年11月13日",
-    // remmina:"2019年11月13日",
-    // vino_preferences:"2019年11月13日",
-    // claws_mail:"2019年11月13日",
-    // system_config_printer:"2019年11月13日",
-    // simple_scan:"2019年11月13日",
-    // mate_system_monitor:"2019年11月13日",
-    // gparted:"2019年11月13日",
-    // engrampa:"2019年11月13日",
-    // audio_recorder:"2019年11月13日",
-    // mate_terminal:"2019年11月13日",
-    tools:"2020年3月13日",
-    technical_assistance:"2020年3月24日",
+    audacious:"2020年8月3日",
+    audio_recorder:"2020年8月3日",
+    biometric_manager:"2020年8月3日",
+    box_manager:"2020年8月3日",
+    brasero:"2020年8月3日",
+    peony:"2020年8月3日",
+    claws_mail:"2020年8月3日",
+    engrampa:"2020年8月3日",
+    eom:"2020年8月3日",
+    faq:"2020年8月3日",
+    filezilla:"2020年8月3日",
+    game:"2020年8月3日",
+    gparted:"2020年8月3日",
+    hot_key:"2020年8月3日",
+    ksc_defender:"2020年8月3日",
+    kybackup:"2020年8月3日",
+    kydroid:"2020年8月3日",
+    ukui_control_center:"2020年8月3日",
+    kylin_ipmsg:"2020年8月3日",
+    kylinOS:"2020年8月3日",
+    kylin_video:"2020年8月3日",
+    kysec_ui_pkexec:"2020年8月3日",
+    ukui_system_monitor:"2020年8月3日",
+    mate_terminal:"2020年8月3日",
+    remmina:"2020年8月3日",
+    simple_scan:"2020年8月3日",
+    technical_assistance:"2020年8月3日",
+    tools:"2020年8月3日",
+    ubiquity:"2020年8月3日",
+    kylin_software_center:"2020年8月3日", 
+    ukui:"2020年8月3日",
+    kylin_assistant:"2020年8月3日",
 };
 
 function onclickButton(str)
@@ -183,7 +188,8 @@ function onclickButton(str)
      }
      hlist_str = "<dl>" + hlist_str + "</dl>";
  //   console.log(hlist_str);
-    str_name = str.replace(/-/g,"_"); 
+
+    str_name = str.replace(/-/g,"_");
     if(navigator.language=="zh-CN")
     {
         var update="更新时间："
@@ -197,6 +203,7 @@ function onclickButton(str)
         var Data=date[str_name].replace(/[\u4e00-\u9fa5]/g,".")
         Data=Data.slice(0,Data.length-1)
     }
+    //console.log(str+"=============="+str_name+"======="+date[str_name]);
     html_new = "<h1><a name='paga_top'>"+info.title+"</a></h1>"
                                 +"<p  class='date' style='text-indent: 0px;'>"
                                 +update
@@ -222,13 +229,27 @@ function onclickButton(str)
 
 }
 
+/*function main()
+{
+    //setLanguage();
+    addhtmlapp();
+}
+
+function setLanguage()
+{
+    if(navigator.language=="en-US")
+    {
+        document.getElementById("plateSystem").innerHTML="System"
+    }
+}*/
+
 function getapp_name(qpp)
 {
     var dirforapp
     var mdPath = window.guideWebkit.js_getIndexMdFilePathOther(qpp)
+    //console.log(qpp)
     var mdDate = window.guideWebkit.js_getIndexMdFileContent(mdPath)
-
-    console.log(mdPath)
+    //console.log(mdPath)
     if(navigator.language=="zh-CN")
     {
         if(mdPath.search("/guide/")>0)
@@ -238,19 +259,17 @@ function getapp_name(qpp)
         else if(mdPath.search("/guide-ubuntukylin/")>0)
         {
             dirforapp="guide-ubuntukylin"
-        }
-        var m2ht = getDocTop(mdPath,mdDate)  
-        //console.log(m2ht.html)
-        var info = m2ht.info
+        }  
+        var info = window.guideWebkit.js_getIndexMdFileTitle(mdPath)
         //console.log(info+"======"+qpp)
-        if(info.title.search("帮助手册")<0)
+        if(info.search("帮助手册")<0)
         {
-            return info.title+"|"+dirforapp;
+            return info+"|"+dirforapp;
         }
         else
         {
             //console.log(info.title.slice(0,info.title.search("帮助手册")))
-            return info.title.slice(0,info.title.search("帮助手册"))+"|"+dirforapp
+            return info.slice(0,info.search("帮助手册"))+"|"+dirforapp
         }
     }
     else
@@ -278,7 +297,8 @@ function addhtmlapp()
            ||dirname=="kylinOS"||dirname=="ukui"||dirname=="ukui-control-center"
            ||dirname=="biometric-manager"||dirname=="hot-key"
            ||dirname=="hardware-compatibility"
-           ||dirname=="ubiquity"||dirname=="kydroid2")
+           ||dirname=="kylin-control-center"||dirname=="faq"
+           ||dirname=="ubiquity"||dirname=="kydroid")
         {
             continue
         }
@@ -295,11 +315,27 @@ function addhtmlapp()
                 var NameAndDir=getapp_name(dirname);
                 var dir=NameAndDir
                 realname=dirname.replace(dirname[0],dirname[0].toUpperCase())
-                while(realname.search("-") !== -1)
+                /*while(realname.search("-") !== -1)
                 {
                     realname=realname.replace(realname[realname.indexOf("-")+1],realname[realname.indexOf("-")+1].toUpperCase())
                     realname=realname.replace("-"," ")
-                }
+                }*/
+		if(realname.search("-") !== -1){
+			realname = realname.split("-")
+			if(realname.length == 2){
+				realname[1]=realname[1].replace(realname[1][0],realname[1][0].toUpperCase())
+			}
+			else if(realname.length == 3){
+				realname[1]=realname[1].replace(realname[1][0],realname[1][0].toUpperCase())
+				realname[2]=realname[2].replace(realname[2][0],realname[2][0].toUpperCase())			
+			}
+			else if(realname.length == 4){
+				realname[1]=realname[1].replace(realname[1][0],realname[1][0].toUpperCase())
+				realname[2]=realname[2].replace(realname[2][0],realname[2][0].toUpperCase())
+				realname[3]=realname[3].replace(realname[3][0],realname[3][0].toUpperCase())
+			}
+			realname = realname.join("-")
+		}
             }
             var element=document.getElementById("app");
             var para=document.createElement("div")
@@ -314,7 +350,7 @@ function addhtmlapp()
             node2.src="file:////usr/share/kylin-user-guide/data/"+dir+"/"+dirname+"/"+pngname+""
             node2.alt=dirname
             para.id="user";
-            para.style.marginLeft="26px";
+            para.style.marginLeft="25px";
             para.className="system-app";
             //para.onclick(onclickButton('biometric-manager'))
             para.setAttributeNode(attr)
@@ -333,25 +369,14 @@ function goBackMainUI()
     //document.getElementById("mainUI").style.display="inline";
     //document.getElementById("pageContent").style.display="none";
     if(navigator.language=="zh-CN")
-    {
-        window.location.href="index.html"
-    }
+	window.location.href="index.html"
     else
-    {
-        window.location.href="index_en_US.html"
-    }
+	window.location.href="index_en_US.html"
 }
 
 function goBackMainUI_ubuntu()
 {
-    if(navigator.language=="zh-CN")
-    {
-        window.location.href="index-ubuntukylin.html"
-    }
-    else
-    {
-        window.location.href="index-ubuntukylin_en_US.html"
-    }
+    window.location.href="index-ubuntukylin.html"
 }
 
 var arrows_div={
@@ -450,6 +475,13 @@ function onclickA(str)
     }
 }
 
+/*function getDocTop_simple(mdFile, mdData)
+{
+    var info = {};
+    var path = mdFile.slice(0, mdFile.lastIndexOf('/') + 1);
+    var renderer = new marked.Renderer();
+}*/
+
 function getDocTop(mdFile, mdData) {
     var hlist = [];
     var info = {};
@@ -498,13 +530,13 @@ function getDocTop(mdFile, mdData) {
         else{
             if(text.lastIndexOf("-big") < 0 ){
 //                return `<h5  style="text-align: center;"><img src="${hrefX2}" data-src="${href}" alt="${text}" /><br>${text}</h5>`;
-                return '<h5  style="text-align: center;font-family: Noto Sans SC; font-size: 12px;color=#333333;"><img src=\"' + hrefX2 + '\" data-src=\"' + href + '\" alt=' + text + '/><br> ' + text + '</h5>';
+                return '<h5  style="text-align: center;font-family: Noto Sans SC; font-size: 10px;color=#333333;"><img src=\"' + hrefX2 + '\" data-src=\"' + href + '\" alt=' + text + '/><br> ' + text + '</h5>';
             }
             else{
                 text1=text.slice(0,text.lastIndexOf("-big"))
 //路径需要用双引号，单引号无法解析相对路径
 //                return `<h5 style="text-align: center;"><img  style="height:98%;width:98%;" src="${hrefX2}" data-src="${href}" alt="${text}" /><br>${text1}</h5>`;
-                return '<h5 style="text-align: center;font-family: Noto Sans SC; font-size: 12px;color=#333333;"><img  style="height:98%;width:98%;" src=\"' + hrefX2 + '\" data-src=\"' + href + '\" alt='+ text +'/><br>' + text1 + '</h5>';
+                return '<h5 style="text-align: center;font-family: Noto Sans SC; font-size: 10px;color=#333333;"><img  style="height:98%;width:98%;" src=\"' + hrefX2 + '\" data-src=\"' + href + '\" alt='+ text +'/><br>' + text1 + '</h5>';
             }
         }
     };

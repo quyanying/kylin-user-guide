@@ -1,224 +1,195 @@
-# 文件管理器
-## 概 述
-文件管理器可以分类查看系统上的文件和文件夹，支持文件和文件夹的常用操作，其主界面如图 1所示。
+# Peony
+## Overview
+Peony(files browser) can view files and folders on the system by category, and supports the general opearations for files and folders. The main interface as shown in Fig 1.
 
-![图 1 文件管理器-big](image/1.png)
+![Fig 1 Peony-big](image/1.png)
 
-## 基本要点
-### 文件名
+## Basic Points
+### File Name
+- The maximum length of filename is 255 characters, usually composed by letters, numbers, ".(dot)", "\_(underline)", "-".
 
-- 系统文件名长度最大可以为255个字符，通常是由字母、数字 、“.(点号)”、“_(下划线)” 和“-(减号)”组成的。
+- Filename can't include "/"; Because "/" means root directory or the separator in a path.
 
-- 文件名不能含有“/”符号；因为“/”在操作系统目录树中，表示根目录或路径中的分隔符号。
+### Path
+- Quote filename directly when the file is in current directory; And use file in other directory by specifying its directory.
 
-### 路 径
+- Absolute path is certain while relative path depends on working directory.
 
-- 使用当前目录下的文件时，可以直接引用文件名；如果要使用其他目录下的文件，就必须指定该文件所在的目录。
+- Each directory has file "." means current location and file ".." means previous location.
 
-- 绝对路径是一定的，相对路径是随着用户工作目录改变的。
+Absolute path -- Start from root directory, for example: "/home/kylin/test"
 
-- 每个目录下都有代表当前目录的“.”文件，和代表当前目录上一级目录的“..”文件。
+Relative path -- Start from current directory, for example: (locate at /home) "kylin/test"
 
-绝对路径 —— 从根目录开始的路径，比如“/home/kylin/test”。
+When locate at /etc, it can be expressed as "../home/kylin/test"
 
-相对路径 —— 从当前所在目录开始的路径，比如位于/home目录下时，test文件的相对路径为“kylin/test”。
+### File Type
+Supported types as shown below:
 
-当位于/etc目录下，test文件的相对路径则表示为“../home/kylin/test”。
-
-### 文件类型
-系统支持如下表中的文件类型：
-
-| 文件类型  | 说明  |
+| Type | Description |
 | :------------ | :------------ |
-| 普通文件  | 包括文本文件、数据文件、可执行的二进制程序等  |
-| 目录文件（目录）  | 系统把目录看成是一种特殊的文件，利用它构成文件系统的分层树型结构  |
-| 设备文件（字符设备文件/块设备文件） | 系统用它来识别各个设备驱动器，内核使用它们与硬件设备通信  |
-| 符号链接 | 存放的数据是文件系统中通向某个文件的路径；当调用符号链接文件时，系统将自动访问保存在文件中的路径|
+| Normal file | Including text files, data files, executable binary program, etc. |
+| Directory file | Regarded as special files, and consist hierarchical tree structure of the system |
+| Device file | Recognize devices and drivers, and enable the kernel to communicate with hardware devices |
+| Symbolic link | Store the path to a system file; When call the symbolic link, the system will access the path saved in it automatically |
 
 <br>
 
-## 窗口组成
-文件管理器窗口可划分为工具栏和地址栏、文件夹标签预览区、侧边栏、窗口区和状态栏五个部分，如图所示。
+## Window Composition
+It can be divided into five parts: toolbar and address bar, folders lable preview area, sidebar, window area and status bar.
 
-![图 2 窗口分区示意图-big](image/2.png)
+![Fig 2 Window areas-big](image/2.png)
 
-### 工具栏和地址栏
-工具栏上图标对应的功能如下。
+<br>
 
-|图标	|说明|	图标|	说明
+### Toolbar and Address Bar
+Icon and Function:
+
+| Icon | Function | Icon | Function |
 | :------------ | :------------ | :------------ | :------------ |
-|![](image/icon1.png)|	新建文件夹	|![](image/icon7.png)|	打开终端
-|![](image/icon2.png)|	后退	|![](image/icon8.png)|	前进
-|![](image/icon3.png)|	搜索文件夹、文件等，提供高级搜索功能	|![](image/icon9.png)|	选择视图模式
-|![](image/icon4.png)|	选择排序方式	|![](image/icon10.png)|	高级设置
-|![](image/icon5.png)|最小化|![](image/icon11.png)|		最大化
-|![](image/icon6.png)|	关闭		||||
-	
-<br>
-
-### 文件夹标签预览区
-用户可查看当前窗口已打开的文件夹标签页，点击 “+” 图标可以再打开一个与相邻标签页相同的页面，如图 3所示。
-
-![图 3 文件夹标签预览区](image/3.png)
-
-### 侧边栏
-侧边栏列出了树状的目录层次结构，提供对操作系统中不同类型文件夹目录的浏览。外接的移动设备、远程连接的共享设备也会在此处显示。
-
-### 窗口区
-窗口区列出了当前目录节点下的子目录、文件。在侧边栏列表中单击一个目录，其中的内容应就会在此处显示。
-
-### 状态栏
-（1）进入某个目录时，显示当前位置的路径。
-
-（2）选中某个文件夹时，显示该文件夹的名称。
-
-（3）选中某个文件时，显示该文件的名称和大小。
-
-（4）右下角的滑动条为缩放条，可对图标大小进行拖动调节。
-
-### 详细信息
-选中某个文件后，点击详细信息图标“![](image/icon12.png)”，即可对文件详情预览，如图 4所示，包含文件名、大小、尺寸等信息。
-
-![图 4 详细信息-big](image/4.png)
-
-## 主要功能
-### 查看文件和文件夹
-用户可以使用文件管理器查看和管理本机文件、本地存储设备（如外置硬盘）、文件服务器和网络共享上的文件。
-
-在文件管理器中，双击任何文件夹，可以查看其内容（使用文件的默认应用程序打开它）；也可以右键单击一个文件夹，在新标签页或新窗口中打开它。
-
-#### 视图模式
-默认情况下，系统以图标形式显示出所有的文件和目录。
-
-- 在图标视图中，文件浏览器中的文件将以“大图标+文件名”的形式显示。
-
-- 在列表视图中，文件浏览器中的文件将以“小图标+文件名+文件信息”的形式显示。
-
-![图 5 列表视图-big](image/5.png)
-
-#### 排序方式
-浏览时，用户可以用不同的方式文件进行排序。单击工具栏上的“![](image/icon4.png)”图标来更改，如图 6所示。
-
-![图 6 排序方式](image/6.png)
-
-各种文件排序方式介绍如下：
-
-（1）按名称排序：按文件名以字母顺序排列。
-
-（2）按文件大小排序：按文件大小（文件占用的磁盘空间）排序；默认情况下会从最小到最大排列。
-
-（3）按文件类型排序：按文件类型以字母顺序排列；会将同类文件归并到一起，然后按名称排序。
-
-（4）按修改日期排序：按上次更改文件的日期和时间排序；默认情况下会从最旧到最新排列。
-
-（5）升序/降序：选择排序方式后，可同时选择升序或者降序。
-
-### 文件搜索
-- 基础搜索：
-
-点击“![](image/icon3.png)”按钮，切换到搜索输入框。搜索框中输入内容，然后按Enter键，即可在当前目录进行搜索，如图 7所示。
-
-![图 7 文件搜索-big](image/7.png)
-
-- 高级搜索：
-
-（1）点击“更多选项”，用户可添加自定义条件，如图所示。
-
-![图 8 更多选项-big](image/8.png)
-
-（2）点击“![](image/icon13.png)”按钮，可设置是否进行递归搜索。
-
-### 文件和文件夹常用操作
-（1）复 制
-
-* 方式1：选中文件，右键单击 > “复制” > 目标位置，右键单击 > “粘贴”
-
-* 方式2：选中文件，Ctrl+C > 目标位置，Ctrl+V
-
-* 方式3：从项目所在文件夹窗口拖动至目的文件夹窗口
-
-在方式3中，如果两个文件夹都在计算机的同一硬盘设备上，项目将被移动；如果是从U盘拖拽到系统文件夹中，项目将被复制（因为这是从一个设备拖拽到另一个设备）。要在同一设备上进行拖动复制，需要在拖动同时按住Ctrl键。
-
-（2）移 动
-
-* 方式1：选中文件，右键单击 > “剪切” > 目标位置，右键单击 > “粘贴”
-
-* 方式2：选中文件，Ctrl+X > 目标位置，Ctrl+V
-
-（3）删 除
-
-删除至回收站：
-
-* 方式1：选中，右键单击 > “删除”
-
-* 方式2：选中，Delete
-
-* 方式3：选中，拖入桌面上的“回收站”
-
-若删除的文件为可移动设备上的，在未进行清空回收站的情况下弹出设备，可移动设备上已删除的文件在其他操作系统上可能看不到，但这些文件仍然存在；当设备重新插入删除该文件所用的系统时，将能在回收站中看到。
-
-永久删除：
-
-* 方式1：在“回收站”中再删除
-
-* 方式2：选中，Shift+Delete
-
-（4）重命名
-
-* 方式1：选中，右键单击 > “重命名”
-
-* 方式2：选中，F2
-
-若要撤销重命名，按Ctrl+Z即可恢复。
+| ![](image/icon1.png) | Create a new folder | ![](image/icon2.png)| Open the terminal |
+| ![](image/icon3.png) | Back to the previous directory | ![](image/icon4.png) | Forward to the next directory |
+| ![](image/icon5.png)  | Search box | ![](image/icon6.png) | Set view method |
+| ![](image/icon7.png) | Set sort method | ![](image/icon8.png) | Advanced settings |
 
 <br>
 
-## 高级设置
-点击工具栏上“![](image/icon10.png)”图标，打开设置选项，如图 9所示。
+### Folders Lable Preview Area
+Users can view the opened folders in the current window, and click "+" to create a page same as the current opened page, as shown in Fig 3.
 
-![图 9 高级设置](image/9.png)
+![Fig 3 Folders lable preview area](image/3.png)
+
+### Sidebar
+Sidebar lists the directories by the form of tree's hierarchy. External mobile devices and remote shared devices are also shown here.
+
+### Window Area
+It lists the sub directories and files of the current directory. Clicking one directory in the sidebar, the contents of it will be shown here.
+
+### Status Bar
+1) When enter one directory, it shows the current path.
+
+2) When select one folder, it shows the folder's name.
+
+3) When select one file, it shows the name and size of this file.
+
+### Detail
+Select one file, and click "![](image/icon9.png)" can see the detail informations about this file, as shown in Fig 4.
+
+![Fig 4 Detail](image/4.png)
 <br>
 
-## 常见问题
-### 附录1 快捷键
+## Basic Function
+### View Files and Folders
+View and manage local files, local storage devices (such as external hard disk), file server, and files in network sharing. 
 
-| 快捷键  | 功能  |
+View any file's contents by double clicking (or open it by the default application). Right clicking can choose to open it in a new tab / new window.
+
+#### View Mode
+The system shows all files and directories through "Icons" mode by default.
+
+- Icons: The form is "Big icon + File name".
+
+- List: The form is "Small icon + File name + File informations"
+
+![Fig 5 Show in "List"-big](image/5.png)
+
+#### Sort Mode
+Users can change it by "![](image/icon7.png)" button on the toolbar.
+
+![Fig 6 Sort ways](image/6.png)
+
+Sort ways introduction:
+
+1) By Name: Alphabetical file name.
+
+2) By Size: Sort by the amount of disk space occupied by the file; From minimum to maximum by default.
+
+3) By Type: Merge similar files together and sort by name.
+
+4) By Date Modified: Sort by the last time to modify files; From the oldest to newest by default.
+
+### Search Files
+- Basic search:
+
+Click "![](image/icon5.png)", and input the key words in the box. Press "Enter" to search in the current path.
+
+![Fig 7 Search file-big](image/7.png)
+
+- Advanced search:
+
+Click "more options" to add more rules, as shown in Fig 8.
+
+![Fig 8 More options](image/8.png)
+
+### Files and Folders General Operations
+1) Copy
+
+* Way 1：Select file and right click > "Copy" > right click at destination > "Paste"
+
+* Way 2: Select file, Ctrl+C > Destination, Ctrl+V
+
+* Way 3: Drag file from original location to the destination.
+
+In way 3, if the two locations are both on a same hard disk, the file will be moved (press Ctrl to copy); If drag from U disk to the system, the file will be copied (because they are two different devices).
+
+2) Move
+
+* Way 1: Select file and right click > "Cut" > right click at destination > "Paste"
+
+* Way 2: Select file, Ctrl+X > Destination, Ctrl+V
+
+3) Delete
+
+Move to trash:
+
+* Way 1: Select file and right click > "Delete to Trash"
+
+* Way 2: Select file, Delete
+
+* Way 3: Drage to Trash on the desktop
+
+If the deleted files are on a removable device, and eject this device without emptying trash, those files will be seen in the trash when re-insert the device to the current system.
+
+Permanently delete:
+
+* Way 1: Delete in trash
+
+* Way 2: Select file, Shift + Delete
+
+4) Rename
+
+* Way 1: Select file and right click > "Rename"
+
+* Way 2: Select file, F2
+
+Press Ctrl + Z to revoke rename.
+
+## Advanced Function
+Click "![](image/icon8.png)" to enter the setting interface.
+ 
+![Fig 9 Preferences](image/9.png)
+
+<br>
+
+## Appdenix
+### Shortcut Key
+
+| Shortcut | Function |
 | :------------ | :------------ |
-| Ctrl+C  | 复制  |
-| Ctrl+X  | 剪切  |
-| Ctrl+V  | 粘贴  |
-| Delete  | 删除  |
-| Shift+Delete  | 永久删除  |
-| Ctrl+Z  | 撤销  |
-| Ctrl+A  | 全选  |
-| F2  | 重命名  |
+| Ctrl + C  | Copy |
+| Ctrl + X  | Cut |
+| Ctrl + V  | Paste |
+| Delete  | Delete |
+| Shift + Delete  | Permanently Delete |
+| Ctrl + Z  | Revoke |
+| Ctrl + A  | Select All |
+| F2  | Rename |
 
-### 附录2 通配符说明
+### Wildcard Description
 
-| 通配符 | 说明 |
+| Wildcard | Description |
 | :------------ | :------------ |
-| 星号（*） |	匹配零个或多个字符 |
-| 问号（?） |	匹配任何一个字符 |
-| [abl A-F]	| 匹配任何一个列举在方括号中的字符，示例中表示a、b、l或任何一个从A到F的大写字符 |
+| * | Match 0 or multiple charaters |
+| ? | Match any charater |
+| [abl A-F] | Match any charater listed in the square brackets. This example represents any charater in a, b, l and captial letter from A to F |
 
-### 附录3 系统部分目录简要介绍
-
-（1）/bin：存放普通用户可以使用的命令文件。
-
-（2）/boot：包含内核和其它系统程序启动时使用的文件。
-
-（3）/dev：设备文件所在目录。在操作系统中设备以文件形式管理，可按照操作文件的方式对设备进行操作。
-
-（4）/etc：系统的配置文件。
-
-（5）/home：用户主目录的位置，保存用户文件，包括了配置文件、文档等。
-
-（6）/lib：包含许多由/bin中的程序使用的共享库文件。
-
-（7）/opt：存放可选择安装的文件和程序，主要是第三方开发者用于安装他们的软件包。
-
-（8）/root：系统管理员（root或超级用户）的主目录。
-
-（9）/usr：包括与系统用户直接相关的文件和目录，一些主要的应用程序也保存在该目录下。
-
-（10）/var：包含一些经常改变的文件。如假脱机（spool）目录、文件日志目录、锁文件和临时文件等。

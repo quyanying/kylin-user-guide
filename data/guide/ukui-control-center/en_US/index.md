@@ -1,291 +1,221 @@
-# 控制面板
-## 概述
-控制面板提供了一个友好的图形用户界面，用于对操作系统常用配置项进行管理。主界面如图 1所示。
+# Ukui Control Center
+## Overview
+Ukui Control Center provides a friendly graphic interface to set the system. As shown in Fig 1.
 
-![图 1 控制面板主界面-big](image/1.png)
+![Fig 1 Ukui Control Center-big](image/1.png)
 <br>
 
-## 系 统
-系统配置设置提供了显示器、默认应用、电源、开机启动四个模块。
+## System
+### Display
+As shown in Fig 2.
 
-### 显示器
-显示器可以配置显示相关的设置，上方彩色矩形代表当前屏幕，中间显示了显示器名称及接口名，如图 2所示。
+![Fig 2 Display-big](image/2.png)
 
-![图 2 显示器设置-big](image/2.png)
+- monitor：Select current monitor
 
-- 显示器：选择当前显示器
+- resolution, orientation, refresh rate, screen zoom are all for the current active monitor.
 
-- 分辨率、方向、刷新率、缩放屏幕的修改都是针对当前活动显示器
+### Defaultapp
+As shown in Fig 3, browser, mail, image viewer, audio player, video player, text editor can be changed.
 
-### 默认应用
-默认应用可以修改浏览器、电子邮件、图像查看器、音频播放器、视频播放器、文本编辑器六种类型的默认打开应用。主界面如图 3所示：
+![Fig 3 Defaultapp-big](image/3.png)
 
-![图 3 默认应用-big](image/3.png)
+### Power
+- Provide "Balance", "Saving", "Custom" modes.
 
-### 电 源
-- 提供平衡、节能、自定义模式
+- "Custom" includes "Power supply" and "Battery supply".
 
-- 自定义包含电源供给和电池供给两种情况
+- Can set power icon.
 
-- 可设置电源图标显示
+![Fig 4 Power-big](image/4.png)
 
-![图 4 系统电源设置-big](image/4.png)
+### Autoboot
+List shows the existed autoboot applications.
 
-### 开机启动
-- 列表中显示了当前系统已存在的开机启动软件
+![Fig 5 Autoboot-big](image/5.png)
 
-- 右侧的开关按钮代表了左侧软件的开机启动状态
-
-![图 5 开机启动-big](image/5.png)
-
-#### 添加
-点击“+”，可添加开机启动应用
-
-![图 6 开机启动添加](image/6.png)
-
-（1）填写“程序名”；
-
-（2）填写“程序路径”，或者通过点击“浏览”按钮，在弹出文件选择界面，选择以desktop为后缀的文件；
-
-（3）“程序描述”作为可选项，可填可不填；
-
-（4）最后点击“确定”按钮，新的启动项即被创建并显示在列表中；
-
-（5）新建的启动项默认为开机启动状态。
+Click "+" can add apps.
 
 <br>
 
-## 设 备
-设备设置提供了打印机、鼠标、键盘、快捷键、声音、触摸板六个设置模块。
+## Devices
+### Mouse
+Customize the mouse key, pointer settings.
 
-### 鼠 标
-对鼠标键、鼠标指针进行个性化设置。
+![Fig 6 Mouse-big](image/6.png)
 
-![图 7 鼠标设备-big](image/7.png)
+### Keyboard
+Set the keyboard's general items, and adjust the layout by the language.
 
-### 键 盘
-对键盘进行常规通用设置，并能够根据键盘语言调整键盘布局。
+![Fig 7 Keyboard-big](image/7.png)
 
-![图 8 键盘设备-big](image/8.png)
+- Enable repeat key: Long press one button will be recognized to repeat input.
 
-- 启用按键重复设置：按下某个按键不放，系统会将该行为作为重复的键盘输入。启用按键重复设置后，可对延时、速度两个选项进行设置。
+- Delay: The time between press button and receive input.
 
-- 延时：按下按键后，到系统开始接收键盘输入之间的间隔
+- Speed: The time between repeat input.
 
-- 速度：按下按键后，重复输入之间的间隔；间隔越长，同样时间内，重复输入的次数越少
+- Layout: Up to 4 layouts can be added.
 
-- 键盘布局：设置当前系统的键盘布局，最多可以添加4个键盘布局。
+### Shortcut
+View all the system shortcuts and custom shortcut.
 
-### 快捷键
-查看所有快捷键，添加或删除自定义快捷键。
+![Fig 8 Shortcut-big](image/8.png)
 
-![图 9 查看快捷键](image/9.png)
+Click "Add custom shortcut" and the popup as shown in Fig 9.
 
-点击“添加自定义快捷键”，弹出添加窗口。
+![Fig 9 Add shortcut](image/9.png)
 
-![图 10 添加快捷键](image/10.png)
+### Audio
+Settings for output, input and system sound, as shown in Fig 10.
 
-Tips：为保证命令合法有效，若快捷键被占用，会在下方给出提示。
+![Fig 10 Audio-big](image/10.png)
+<br>
 
-### 声 音
-对输入、输出和系统音效进行设置，如图 11所示。
+## Personalized
+### Background
+Here are "picture" and "color" can be selected.
 
-![图 11 声音设备-big](image/11.png)
+![Fig 11 Background-big](image/11.png)
 
-- 声道平衡：靠近“左”方向为左声道，靠近“右”为右声道
+### Theme
 
-- 输入等级：配置声音输入设备的高低等级
+- Theme Mode:
+
+![Fig 12 Theme mode](image/12.png)
+
+- Icon theme and cursor theme:
+
+![Fig 13 Icon&cursor theme](image/13.png)
+
+### Screenlock
+Select the picture that shows in login interface.
+
+![Fig 14 Screenlock-big](image/14.png)
+
+### Fonts
+Settings for font, size, monospace font, and more items are in "Advanced settings"
+
+Click "Reset to default" to restore the settings to default status.
+
+![Fig 15 Fonts-big](image/15.png)
+
+### Screensaver
+Set the screensaver program and idle time.
+
+![Fig 16 Screensaver-big](image/16.png)
+
+### Desktop
+Set the icons lock on Start Menu and Tray Menu.
+
+![Fig 17 Desktop-big](image/17.png)
+<br>
+
+## Network
+It includes "Netconnect", "Vpn" and "Proxy". Here only introduct "Netconnect".
+
+### Set Wired Connection
+1) Click "Networking settings" to open the setting window.
+
+2) Click "Add" and choose "Ethernet". In the "Ethernet" tab can select device.
+
+![Fig 18 Select device](image/18.png)
+
+3) In the "IPv4 Settings" tab can edit the net configuration.
+
+![Fig 19 Configuration example](image/19.png)
+
+4) Click "Save", and the system will use this connection automatically.
+
+## Account
+Manage all the system users, create/delete users, and modify users' informations.
+
+![Fig 20 Account-big](image/20.png)
+
+### Current User
+#### Change User Face
+Click user's face can change it.
+
+![Fig 21 Change face](image/21.png)
+
+#### Change Password
+Click "Change Pwd" to modify the current user's password.
+
+![Fig 22 Change pwd](image/22.png)
+
+#### Change Account Type
+- administrator: Input user's password can elevated permission temporarily
+
+- standard user: Can't elevated permission.
+
+![Fig 23 Change account type](image/23.png)
+
+### Other Users
+Administrator can modify other user's information, add new user, etc..
+
+- Add new user
+
+![Fig 24 Add new user](image/24.png)
+
+- Edit
+
+![Fig 25 Edit user](image/25.png)
+<br>
+
+## Datetime
+As shown in Fig 26:
+
+![Fig 26 Datetime-big](image/26.png)
+
+- Sync system time: Sync the time on the Internet NTP server.
+
+- Change time: Manual set the time and date.
+
+![Fig 27 Change time](image/27.png)
+
+- Change time zone:
+
+![Fig 28 Time zone-big](image/28.png)
+
+### Area
+
+![Fig 29 Area-big](image/29.png)
+
+- change format of data: Customize calendar, first day of week, date, time.
+
+![Fig 30 Change format of data](image/30.png)
+
+- first language: Language in system windows, menus and website. 
+
+Click "Add main language" to add others.
 
 <br>
 
-## 个性化
-个性化设置提供了背景、主题、锁屏、字体、屏保、桌面六个模块。
+## Update
+### SecurityCenter
+An access of security center.
 
-### 背 景
-针对桌面背景，提供两种背景形式的选择：纯色、图片。
+![Fig 31 Security center-big](image/31.png)
 
-![图 12 背景形式选择-big](image/12.png)
+### Update
+Check if there are available update for the system.
 
-### 主 题
-主题包括主题模式、图标主题、光标主题、效果设置
+![Fig 32 Update-big](image/32.png)
 
-- 主题模式：
+### Backup
+- Backup: Back up files to other devices.
 
-![图 13 主题模式](image/13.png)
+- Restore: View backup list and restore the system to one of them.
 
-- 图标主题和光标主题：
-
-![图 14 图标&光标主题-big](image/14.png)
-
-### 锁 屏
-选择在登录界面显示的背景图片，且可对电脑开启锁屏的时间进行设置。
-
-![图 15 锁屏设置-big](image/15.png)
-
-### 字 体
-对字体、大小、等宽进行常规设置，在高级设置里提供相应字体的设置。
-
-点击“恢复默认设置”按钮将所有字体设置还原为系统默认状态。
-
-![图 16 字体设置-big](image/16.png)
-
-### 屏 保
-设置屏保程序、等待时间。
-
-![图 17 屏保设置-big](image/17.png)
-
-### 桌 面
-设置开始菜单为全屏，锁定在开始菜单的图标和托盘上的图标。
-
-![图 18 桌面设置-big](image/18.png)
+![Fig 33 Backup-big](image/33.png)
 <br>
 
-## 网 络
-网络代理主要是配置网络代理相关设置：网络连接、VPN、代理。此处主要说明介绍网络连接。
+## Messages
+### Notice
+As shown in Fig 34.
 
-### 配置有线网络
-（1）点击“网络设置”，打开网络连接窗口。
+![Fig 34 Notice-big](image/34.png)
 
-![图 19 网络连接](image/19.png)
-
-（2）点击“增加”，并选择“以太网”。在编辑窗口的“以太网”标签页，可选择设备。
-
-![图 20 选择设备](image/20.png)
-
-（3）在“IPv4”标签页，可配置网络。
-
-![图 21 配置方法选择](image/21.png)
-
-![图 22 配置示例](image/22.png)
-
-（4）完成后点击“保存”，系统会自动连上新增的网络。
-
-### 多IP配置
-一个网卡配置多个IP的作用：连接多个网段。比如：同时连接外网和局域网，避免网络来回设置的麻烦。
-
-此功能需要这些网段的物理层是连通的。
-
-当鼠标悬停在IP地址配置框时，会有提示文字。
-
-![图 23 IP配置提示](image/23.png)
-
-多IP配置方法：
-
-（1）打开编辑网络连接的页面，输入IP地址与掩码，如图所示（图中的地址仅为示例）。
-
-![图 24 多IP配置1](image/24.png)
-
-（2）点击图 24中右下角的“路由”按钮，在弹窗中填入IP的具体信息，并勾选“仅将此连接用于相对应的网络上的资源”。
-
-![图 25 多IP配置2](image/25.png)
-
-（3）若不同IP需要的DNS也不同，可通过在终端执行命令 “sudo vim /etc/resolv.conf”，对配置文件进行修改。
-
+### About
+Show the system version, authentication, etc..
 <br>
-
-## 账 户
-对系统用户进行管理配置，允许管理员创建用户、删除用户、修改用户信息。
-
-![图 26 账户信息设置-big](image/26.png)
-
-### 当前用户
-#### 更改用户头像
-点击用户头像，即可进行修改，图片可从本机图片中选择。
-
-![图 27 更改用户头像](image/27.png)
-
-#### 更改密码
-点击“更改密码”，即可修改当前用户的密码。
-
-![图 28 更改密码](image/28.png)
-
-#### 更改账户类型
-系统用户类型分两种：标准用户和管理员用户。
-
-- 管理员用户：输入用户密码，可以临时提升root权限
-
-- 标准用户：无法提升权限。
-
-Tips：系统至少需要存在一个管理员用户。
-
-![图 29 更改用户类型](image/29.png)
-
-### 其他用户
-可编辑其他用户信息，添加新用户，删除用户等。
-
-- 添加新用户
-
-![图 30 添加新用户](image/30.png)
-点击“添加新用户”，定义账户名称、密码、账户类型等如图 41所示。
-
-- 编辑用户
-
-![图 31 编辑用户-big](image/31.png)
-<br>
-
-## 时间和日期
-主界面如图所示：
-
-![图 32 时间和日期-big](image/32.png)
-
-- 同步系统时间：与互联网上的NTP服务器时间同步，此状态下不再允许修改时间或日期
-
-- 手动更改时间：需要先取消“同步系统时间”，手动设置时间和年月日
-
-![图 33 手动更改时间](image/33.png)
-
-- 时间格式分12小时和24小时，点击右侧开关立即生效
-
-- 更改时区：如下图所示，根据个人需求进行选择
-
-![图 34 时区-big](image/34.png)
-
-### 语言和地区
-主界面如图所示:
-
-![图 35 区域语言-big](image/35.png)
-
-- 更改数据格式：自定义日历、一周第一天、日期、时间
-
-![图 36 更改格式数据](image/36.png)
-
-- 首选语言：系统窗口、菜单及网页的显示语言，首选推荐语言为简体中文。
-
-点击“添加首选语言”，可添加其他地区语言作为备选。
-
-<br>
-
-## 更 新
-可检测系统是否有更新内容。
-
-![图 37 系统更新-big](image/37.png)
-
-### 备 份
-- 开始备份：将文件备份到其他驱动器
-
-- 开始还原：查看备份列表，并选择还原点进行恢复。
-
-![图 38 备份和还原-big](image/38.png)
-<br>
-
-## 通知和操作
-### 通 知
-如图所示：
-
-![图 39 通知-big](image/39.png)
-
-### 关 于
-显示本机系统的版本、设备规格、授权激活信息。
-
-![图 40 关于-big](image/40.png)
-<br>
-
-## 常见问题
-### 点击开始菜单上的控制面板按钮，无反应
-在键盘上按下 Ctrl + Alt + T 组合键打开命令行终端，输入“ukui-control-center”后按下回车，查看错误输出。
-
-### 修改控件状态后，控件立刻还原到修改前状态
-大概率是因为权限问题。
-
-在键盘上按下 Ctrl + Alt + T 组合键打开命令行终端，输入“rm ~/.config/dconf/user”后按下回车。
-

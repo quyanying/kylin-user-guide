@@ -19,6 +19,7 @@
 #define LOCAL_FILE_PATH "/usr/share/kylin-user-guide/data/guide/"
 #define LOCAL_URL_PATH "file://///usr/share/kylin-user-guide/web/"
 
+
 #define LOCAL_FILE_PATH_UBUNTUKYLIN "/usr/share/kylin-user-guide/data/guide-ubuntukylin/"
 #define LOCAL_URL_PATH_UBUNTUKYLIN "file://///usr/share/kylin-user-guide/web/"
 

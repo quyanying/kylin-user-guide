@@ -42,12 +42,8 @@ MainController* MainController::self()
 
 MainController::MainController()
 {
-    qDebug() << Q_FUNC_INFO << QString::fromLocal8Bit(qgetenv("XDG_RUNTIME_DIR"));
-    if((""!=QString::fromLocal8Bit(qgetenv("XDG_RUNTIME_DIR")))||(""!=QString::fromLocal8Bit(qgetenv("DBUS_SESSION_BUS_ADDRESS"))))
-    {
-        ipcDbus = new IpcDbus;
-        ipcDbus->init();
-    }
+    ipcDbus = new IpcDbus;
+    ipcDbus->init();
     guideWidget = new GuideWidget;
     guideWidget->activateWindow();
     startShowApp();

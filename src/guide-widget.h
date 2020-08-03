@@ -62,17 +62,12 @@ public:
     void set_Cursor(QPoint &event);
     QString system_name();
     QStringList getDirAndPng();
-
-    bool eventFilter(QObject *watched, QEvent *event);
-
 protected:
     void closeEvent(QCloseEvent *);
     void mousePressEvent(QMouseEvent * );
     void mouseMoveEvent(QMouseEvent *);
     void mouseReleaseEvent(QMouseEvent *);
     void mouseDoubleClickEvent(QMouseEvent *);
-    void paintEvent(QPaintEvent *);
-    void resizeEvent(QResizeEvent *e);
     QPoint dragPos;
     bool mouseinwidget =false;
     bool isClose = false;
@@ -96,6 +91,7 @@ public slots:
     Q_INVOKABLE QString js_getIndexMdFilePath(QString);
     Q_INVOKABLE QString js_getIndexMdFilePathOther(QString);
     Q_INVOKABLE QString js_getIndexMdFileContent(QString);
+    Q_INVOKABLE QString js_getIndexMdFileTitle(QString);
     Q_INVOKABLE QStringList js_getIntoFilename();
 public:
 

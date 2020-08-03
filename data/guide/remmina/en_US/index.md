@@ -1,42 +1,74 @@
-# 远程桌面客户端
-## 概 述
-远程桌面客户端可通过VNC，SSH，RDP远程协议连接计算机。主界面如图1所示。
+# Remmina
+## Overview
+Remmina provides the function that connect to remote computers through VNC (graphic) or SSH (terminal). The main interface as shown in Fig 1.
 
-![图 1 远程桌面客户端主界面](image/1.png)
+![Fig 1 Remmina](image/1.png)
 <br>
 
-## 基本功能
-### 新建远程连接
-以SSH协议，连接 172.22.40.36 的计算机为例。
+## Basic Function
+Icon and Function:
 
-1）点击“![](image/icon1.png)”，弹出远程桌面设定界面，如图2所示。
+| Icon | Function | Icon | Function |
+| :------------ | :------------ | :------------ | :------------ |
+|![](image/icon1.png)| Connect to the selected remote desktop |![](image/icon4.png)| Create a new connection |
+|![](image/icon2.png)| Copy a connection |![](image/icon5.png)| Edit a connection
+|![](image/icon3.png)| Delete |![](image/icon6.png)| Open preferences
 
-![图 2 远程桌面文件设定-big](image/2.png)
-
-2）选择SSH协议,“服务器”框中输入目标计算机IP地址：172.22.40.36，“用户名”和“用户密码”为目标计算机的名称和密码。完成后，点击“连接”。
-
-![图 3 连接配置-big](image/3.png)
-
-3）连接上的界面如图3所示。
-
-![图 4 连接成功](image/4.png)
-
-4）或是直接在主界面上选择SSH，并输入目标计算机的IP，在弹出窗口填写信息。
-
-![图 5 主界面填写信息](image/5.png)
-
-#### 首选项
-点击“![](image/icon2.png)”，选择“首选项”，可对远程桌面客户端进行设置，如图6所示。
-
-![图 6 首选项](image/6.png)
 <br>
 
-## 高级功能
-在已连接的窗口，提供了一些工具。如下表所示，为部分说明。
+### New Connection Steps
+Taking SSH, connect to the computer with IP address 172.19.40.86 for example.
 
-| 图 标 | 功能说明 | 图 标 | 功能说明 |
-|:-----|:-----|:-----|:-----|
-|![](image/icon3.png)| 全屏 | ![](image/icon4.png) | 俘获所有键盘事件 |
-|![](image/icon5.png)| 复制/粘贴/全选/键盘监听 |![](image/icon6.png)| 截屏 |
-|![](image/icon7.png)| 最小化窗口 | ![](image/icon8.png) |  断开连接 |
+1) Ensure the sshd service is running on two computers.
 
+Click "![](image/icon4.png)" and the preferences window as shown in Fig 2.
+
+![Fig 2 Remote desktop preferences](image/2.png)
+
+2) Select SSH
+
+"Server" box : Input IP address 172.19.40.86
+
+"SSH Authentication" - "User name" : Input the name of connected computer
+
+Click "Connect" and input the password of connected computer. If it's first time to connect to this computer, users are needed to trust the new public key.
+
+![Fig 3 Connecting-big](image/3.png)
+
+3) After authenticated, the interface as shown in Fig 4.
+
+![Fig 4 Connect successfully](image/4.png)
+
+### Preferences
+Click "![](image/icon6.png)" or "Edit" > "Preferences" to customize the remmina settings, as shown in Fig 5.
+
+![Fig 5 Preferences](image/5.png)
+<br>
+
+## Advanced Function
+### View
+Click "View" to select the items displayed on the window.
+
+![Fig 6 View](image/6.png)
+
+### Import & Export
+Click "Tools" > "Import" to import a file of other connection, or click "Tools" > "Export" to generate a configuration file from a connection.
+
+### Plugins
+CLick "Tools" > "Plugins" to see the current plugins' informations, such as name, type, etc., as shown in Fig 7.
+
+![Fig 7 Plugins](image/7.png)
+<br>
+
+## Appendix
+### Shortcut Key
+
+| Shortcut | Function |
+| :------------ | :------------ |
+| Ctrl + O | Connect |	
+| Ctrl + N | New |	
+| Ctrl + C | Copy |	
+| Ctrl + E | Edit |	
+| Ctrl + D | Delete |	
+| Ctrl + X | Quit |	
+| Ctrl + P | Preferences |	

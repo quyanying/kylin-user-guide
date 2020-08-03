@@ -1,101 +1,56 @@
-# FTP客户端
-## 概 述
-FTP客户端是一款网络应用软件，可连接到FTP服务器上，进行目录、文件的上传和下载，主界面如图 1所示。
+# Filezilla
+## Overview
+Connect to ftp server, and download/upload files. The main interface as shown in Fig 1.
 
-![图 1 FTP客户端主界面-big](image/1.png)
+![Fig 1 Filezilla-big](image/1.png)
 <br>
 
-## 基本功能
-### 连接服务器
+## Basic Function
+### Connect to FTP
+1) Input the informations of the FTP server
 
-在顶部输入 FTP 服务器的地址，以及登录的用户名、密码和端口，连接到服务器。
+IP address, user name, password, as shown in Fig 2.
 
-![图 2 连接到FTP服务器-big](image/2.png)
+![Fig 2 Connect to FTP-big](image/2.png)
 
-### 查看远程目录并下载
+### View and download
 
-右半部的窗口（远程目录窗口）能看到服务器上的目录和文件详情。右键单击，可选择文件下载等操作。
+The right side part is the remote window, showing the directories and files on the FTP server. Right-click menu as shown in Fig 3.
 
-![图 3 服务器上的文件详情](image/3.png)
+![Fig 3 The files on FTP](image/3.png)
 
-### 查看本地窗口并上传
+### Upload
 
-左半部（本地目录窗口）是本机的目录和文件详情。右键单击，可选择文件上传等操作。
+The left side part is the local window, and right-click menu as shown in Fig 4.
 
-![图 4 本地的文件详情](image/4.png)
+![Fig 4 The files at local](image/4.png)
 
-### 查看传输任务
+### Transfer records
 
-传输的状态及进度,会在底部窗口显示并记录。
+It shows at the bottom of the interface.
 
-![图 5 传输记录-big](image/5.png)
+![Fig 5 Transmission records](image/5.png)
 <br>
 
-## 高级功能
-### 站点管理
-点击“文件” > “添加当前连接到站点管理器”，可保存当前连接的信息，便于下次快速连接。
+## Appendix
+### Shortcut Key
 
-![图 6 添加当前连接到站点管理器-big](image/6.png)
-
-左键单击工具栏上的“![](image/icon1.png)”图标，可打开站点管理器；右键单击可查看站点列表，选择后可连接到该站点。
-
-### 导入&导出
-点击“文件” > “导入”/“导出”，可从文件中导入设定，或是把站点管理记录、设置等导出。
-
-![图 7 导出](image/7.png)
-
-### 清除个人信息
-点击“编辑” > “清除个人信息”，可选择要删除哪些分类。
-
-![图 8 清除个人信息](image/8.png)
-
-### 界面布局显示
-点击“查看”，可通过勾选，选择在主界面上显示的区块，并提供了列表过滤、目录比较功能，如图 9所示。
-
-![图 9 “查看”下拉菜单](image/9.png)
-
-### 对已存在文件的默认操作
-点击“传输” > “对已存在文件的默认操作”，如图 10所示，可对上传/下载中出现重复文件时的处理方式进行设置。
-
-![图 10 对已存在文件的默认操作](image/10.png)
-
-### 速度限制
-点击“传输” > “速度限制”，可启用和配置，如图 11所示。
-
-![图 11 配置传输速度](image/11.png)
-
-### 手动传输
-点击“传输” > “手动传输”，界面如图 12所示，可指定某个文件的上传/下载。
-
-![图 12 手动传输-big](image/12.png)
-
-### 搜索远程文件
-点击“服务器” > “搜索远程文件”，如图 13所示，可搜索服务器上满足搜索条件的文件。
-
-![图 13 搜索远程文件-big](image/13.png)
-<br>
-
-## 附录
-### 快捷键
-
-|选项	|快捷键|	操作内容
-| :------------ | :------------ | :------------: |
-|站点管理器（S）	|Ctrl+S|	打开站点管理器
-|新标签（T）	|Ctrl+T|	添加新标签
-|关闭标签（O）|	Ctrl+W|	关闭当前标签
-|显示正在被编辑的文件（H）|	Ctrl+E|	显示正在被编辑的文件
-|退出（Q）|	Ctrl+Q|	退出FTP客户端
-|刷新（R）|	F5|	刷新消息日志
-|文件名过滤器（F）	|Ctrl+I|	打开文件名过滤器
-|目录比较-启用（O）	|Ctrl+O	|启用目录比较
-|同步浏览（Y）|	Ctrl+Y|	开启同步浏览
-|处理队列（Q）|	Ctrl+P|	处理队列
-|保留传输文件的时间戳（P）|	Ctrl+U|	保留传输文件的时间戳
-|手动传输（M）	|Ctrl+M	|手动进行传输
-|重新连接（R）|	Ctrl+R|	重新连接当前服务器
-|断开连接（D）|	Ctrl+D|	断开当前服务器
-|搜索远程文件（S）	|F3	|搜索远程文件
-|添加书签（A）	|Ctrl+B|	添加书签
-|管理书签（M）	|Shift+Ctrl+B|	管理书签
-
-
+| Shortcut | Function|
+| :------------ | :------------: |
+| Ctrl+S | Open site manager
+| Ctrl+T | Add new tab
+| Ctrl+W | Close the current tab
+| Ctrl+E | Show the editing files
+| Ctrl+Q | Quit
+| F5 | Refresh log
+| Ctrl+I | Filename filters
+| Ctrl+O | Directory comparison
+| Ctrl+Y | Synchronized browsing
+| Ctrl+P | Process queue
+| Ctrl+U | Preserve timestamps of transferred files
+| Ctrl+M | Manual transfer
+| Ctrl+R | Reconnect
+| Ctrl+D | Disconnect
+| F3 | Search the remote files
+| Ctrl+B | Add bookmark
+| Shift+Ctrl+B | Manage bookmarks
